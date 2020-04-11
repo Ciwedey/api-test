@@ -1,0 +1,32 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "Automate Rest API testing",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^8.2.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./api/test --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 180000",
+    "reports": "xdg-open 'reports/mochawesome/mochawesome.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ciwedey/api-test.git"
+  },
+  "author": "Greg Arga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ciwedey/api-test/issues"
+  },
+  "homepage": "https://github.com/Ciwedey/api-test#readme"
+}
