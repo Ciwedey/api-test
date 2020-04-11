@@ -16,3 +16,10 @@ Untuk run test dengan command:
 ```sh
 npm run test
 ```
+![test result](https://github.com/Ciwedey/api-test/blob/master/Screenshot%20from%202020-04-11%2014-04-06.png)
+
+Untuk membuka report html run command:
+```sh
+npm run reports
+```
+![report result](https://github.com/Ciwedey/api-test/blob/master/Screenshot%20from%202020-04-11%2014-04-30.png)
