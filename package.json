@@ -10,7 +10,7 @@
     "supertest": "^4.0.2"
   },
   "devDependencies": {
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "mochawesome": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
