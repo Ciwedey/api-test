@@ -11,7 +11,7 @@ const testCase = {
     "getRecipe" : "As a User, I want to be able to get Blue Margarita recipe",
  },
  "negative" : {
-    "noSearch" : "As a User, I should got null message when I try to search water",
+    "noSearch" : "As a User, I should got null message when I try to search Cendol",
  }
 }
 
@@ -24,7 +24,7 @@ describe(`cocktail recipe List`, () => {
  }),
 
  it(`@get ${testCase.negative.noSearch}`, async() => {
-  const response = await page.getRecipes('cendol');
+  const response = await page.getRecipes('Cendol');
   assert(response.status).to.equal(200);
   assert(response.body.drinks).to.equal(null);
  })
