@@ -1,557 +1,225 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "http://example.com/example.json",
-    "type": "object",
-    "readOnly": false,
-    "writeOnly": false,
-    "minProperties": 0,
-    "title": "The Root Schema",
-    "description": "The root schema comprises the entire JSON document.",
-    "additionalProperties": true,
-    "required": [
-        "drinks"
-    ],
-    "properties": {
-        "drinks": {
-            "$id": "#/properties/drinks",
-            "type": "array",
-            "readOnly": false,
-            "writeOnly": false,
-            "uniqueItems": false,
-            "minItems": 0,
-            "minContains": 1,
-            "title": "The Drinks Schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": [],
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/drinks/items",
-                "type": "object",
-                "readOnly": false,
-                "writeOnly": false,
-                "minProperties": 0,
-                "title": "The Items Schema",
-                "description": "An explanation about the purpose of this instance.",
-                "default": {},
-                "additionalProperties": true,
-                "required": [
-                    "idDrink",
-                    "strDrink",
-                    "strDrinkAlternate",
-                    "strDrinkES",
-                    "strDrinkDE",
-                    "strDrinkFR",
-                    "strDrinkZH-HANS",
-                    "strDrinkZH-HANT",
-                    "strTags",
-                    "strVideo",
-                    "strCategory",
-                    "strIBA",
-                    "strAlcoholic",
-                    "strGlass",
-                    "strInstructions",
-                    "strInstructionsES",
-                    "strInstructionsDE",
-                    "strInstructionsFR",
-                    "strInstructionsZH-HANS",
-                    "strInstructionsZH-HANT",
-                    "strDrinkThumb",
-                    "strIngredient1",
-                    "strIngredient2",
-                    "strIngredient3",
-                    "strIngredient4",
-                    "strIngredient5",
-                    "strIngredient6",
-                    "strIngredient7",
-                    "strIngredient8",
-                    "strIngredient9",
-                    "strIngredient10",
-                    "strIngredient11",
-                    "strIngredient12",
-                    "strIngredient13",
-                    "strIngredient14",
-                    "strIngredient15",
-                    "strMeasure1",
-                    "strMeasure2",
-                    "strMeasure3",
-                    "strMeasure4",
-                    "strMeasure5",
-                    "strMeasure6",
-                    "strMeasure7",
-                    "strMeasure8",
-                    "strMeasure9",
-                    "strMeasure10",
-                    "strMeasure11",
-                    "strMeasure12",
-                    "strMeasure13",
-                    "strMeasure14",
-                    "strMeasure15",
-                    "strCreativeCommonsConfirmed",
-                    "dateModified"
-                ],
-                "properties": {
-                    "idDrink": {
-                        "$id": "#/properties/drinks/items/properties/idDrink",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Iddrink Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strDrink": {
-                        "$id": "#/properties/drinks/items/properties/strDrink",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strdrink Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strDrinkAlternate": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkAlternate",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkalternate Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkES": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkES",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkes Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkDE": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkDE",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkde Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkFR": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkFR",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkfr Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkZH-HANS": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkZH-HANS",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkzh-hans Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkZH-HANT": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkZH-HANT",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strdrinkzh-hant Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strTags": {
-                        "$id": "#/properties/drinks/items/properties/strTags",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strtags Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strVideo": {
-                        "$id": "#/properties/drinks/items/properties/strVideo",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strvideo Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strCategory": {
-                        "$id": "#/properties/drinks/items/properties/strCategory",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strcategory Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIBA": {
-                        "$id": "#/properties/drinks/items/properties/strIBA",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Striba Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strAlcoholic": {
-                        "$id": "#/properties/drinks/items/properties/strAlcoholic",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Stralcoholic Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strGlass": {
-                        "$id": "#/properties/drinks/items/properties/strGlass",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strglass Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strInstructions": {
-                        "$id": "#/properties/drinks/items/properties/strInstructions",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strinstructions Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strInstructionsES": {
-                        "$id": "#/properties/drinks/items/properties/strInstructionsES",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strinstructionses Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strInstructionsDE": {
-                        "$id": "#/properties/drinks/items/properties/strInstructionsDE",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strinstructionsde Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strInstructionsFR": {
-                        "$id": "#/properties/drinks/items/properties/strInstructionsFR",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strinstructionsfr Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strInstructionsZH-HANS": {
-                        "$id": "#/properties/drinks/items/properties/strInstructionsZH-HANS",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strinstructionszh-hans Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strInstructionsZH-HANT": {
-                        "$id": "#/properties/drinks/items/properties/strInstructionsZH-HANT",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strinstructionszh-hant Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strDrinkThumb": {
-                        "$id": "#/properties/drinks/items/properties/strDrinkThumb",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strdrinkthumb Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIngredient1": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient1",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Stringredient1 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIngredient2": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient2",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Stringredient2 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIngredient3": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient3",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Stringredient3 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIngredient4": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient4",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Stringredient4 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strIngredient5": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient5",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient5 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient6": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient6",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient6 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient7": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient7",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient7 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient8": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient8",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient8 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient9": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient9",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient9 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient10": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient10",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient10 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient11": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient11",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient11 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient12": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient12",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient12 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient13": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient13",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient13 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient14": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient14",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient14 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strIngredient15": {
-                        "$id": "#/properties/drinks/items/properties/strIngredient15",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Stringredient15 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure1": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure1",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strmeasure1 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strMeasure2": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure2",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strmeasure2 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strMeasure3": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure3",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strmeasure3 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strMeasure4": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure4",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strmeasure4 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "strMeasure5": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure5",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure5 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure6": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure6",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure6 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure7": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure7",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure7 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure8": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure8",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure8 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure9": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure9",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure9 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure10": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure10",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure10 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure11": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure11",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure11 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure12": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure12",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure12 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure13": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure13",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure13 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure14": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure14",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure14 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strMeasure15": {
-                        "$id": "#/properties/drinks/items/properties/strMeasure15",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "title": "The Strmeasure15 Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": null
-                    },
-                    "strCreativeCommonsConfirmed": {
-                        "$id": "#/properties/drinks/items/properties/strCreativeCommonsConfirmed",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Strcreativecommonsconfirmed Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    },
-                    "dateModified": {
-                        "$id": "#/properties/drinks/items/properties/dateModified",
-                        "type": "string",
-                        "readOnly": false,
-                        "writeOnly": false,
-                        "minLength": 0,
-                        "title": "The Datemodified Schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": ""
-                    }
-                }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "drinks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "idDrink": {
+              "type": "string"
+            },
+            "strDrink": {
+              "type": "string"
+            },
+            "strDrinkAlternate": {
+              "type": "null"
+            },
+            "strTags": {
+              "type": "null"
+            },
+            "strVideo": {
+              "type": "null"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strIBA": {
+              "type": "null"
+            },
+            "strAlcoholic": {
+              "type": "string"
+            },
+            "strGlass": {
+              "type": "string"
+            },
+            "strInstructions": {
+              "type": "string"
+            },
+            "strInstructionsES": {
+              "type": "string"
+            },
+            "strInstructionsDE": {
+              "type": "string"
+            },
+            "strInstructionsFR": {
+              "type": "string"
+            },
+            "strInstructionsIT": {
+              "type": "string"
+            },
+            "strInstructionsZH-HANS": {
+              "type": "null"
+            },
+            "strInstructionsZH-HANT": {
+              "type": "null"
+            },
+            "strDrinkThumb": {
+              "type": "string"
+            },
+            "strIngredient1": {
+              "type": "string"
+            },
+            "strIngredient2": {
+              "type": "string"
+            },
+            "strIngredient3": {
+              "type": "string"
+            },
+            "strIngredient4": {
+              "type": "string"
+            },
+            "strIngredient5": {
+              "type": "null"
+            },
+            "strIngredient6": {
+              "type": "null"
+            },
+            "strIngredient7": {
+              "type": "null"
+            },
+            "strIngredient8": {
+              "type": "null"
+            },
+            "strIngredient9": {
+              "type": "null"
+            },
+            "strIngredient10": {
+              "type": "null"
+            },
+            "strIngredient11": {
+              "type": "null"
+            },
+            "strIngredient12": {
+              "type": "null"
+            },
+            "strIngredient13": {
+              "type": "null"
+            },
+            "strIngredient14": {
+              "type": "null"
+            },
+            "strIngredient15": {
+              "type": "null"
+            },
+            "strMeasure1": {
+              "type": "string"
+            },
+            "strMeasure2": {
+              "type": "string"
+            },
+            "strMeasure3": {
+              "type": "string"
+            },
+            "strMeasure4": {
+              "type": "string"
+            },
+            "strMeasure5": {
+              "type": "null"
+            },
+            "strMeasure6": {
+              "type": "null"
+            },
+            "strMeasure7": {
+              "type": "null"
+            },
+            "strMeasure8": {
+              "type": "null"
+            },
+            "strMeasure9": {
+              "type": "null"
+            },
+            "strMeasure10": {
+              "type": "null"
+            },
+            "strMeasure11": {
+              "type": "null"
+            },
+            "strMeasure12": {
+              "type": "null"
+            },
+            "strMeasure13": {
+              "type": "null"
+            },
+            "strMeasure14": {
+              "type": "null"
+            },
+            "strMeasure15": {
+              "type": "null"
+            },
+            "strImageSource": {
+              "type": "null"
+            },
+            "strImageAttribution": {
+              "type": "null"
+            },
+            "strCreativeCommonsConfirmed": {
+              "type": "string"
+            },
+            "dateModified": {
+              "type": "string"
             }
+          },
+          "required": [
+            "idDrink",
+            "strDrink",
+            "strDrinkAlternate",
+            "strTags",
+            "strVideo",
+            "strCategory",
+            "strIBA",
+            "strAlcoholic",
+            "strGlass",
+            "strInstructions",
+            "strInstructionsES",
+            "strInstructionsDE",
+            "strInstructionsFR",
+            "strInstructionsIT",
+            "strInstructionsZH-HANS",
+            "strInstructionsZH-HANT",
+            "strDrinkThumb",
+            "strIngredient1",
+            "strIngredient2",
+            "strIngredient3",
+            "strIngredient4",
+            "strIngredient5",
+            "strIngredient6",
+            "strIngredient7",
+            "strIngredient8",
+            "strIngredient9",
+            "strIngredient10",
+            "strIngredient11",
+            "strIngredient12",
+            "strIngredient13",
+            "strIngredient14",
+            "strIngredient15",
+            "strMeasure1",
+            "strMeasure2",
+            "strMeasure3",
+            "strMeasure4",
+            "strMeasure5",
+            "strMeasure6",
+            "strMeasure7",
+            "strMeasure8",
+            "strMeasure9",
+            "strMeasure10",
+            "strMeasure11",
+            "strMeasure12",
+            "strMeasure13",
+            "strMeasure14",
+            "strMeasure15",
+            "strImageSource",
+            "strImageAttribution",
+            "strCreativeCommonsConfirmed",
+            "dateModified"
+          ]
         }
+      ]
     }
+  },
+  "required": [
+    "drinks"
+  ]
 }

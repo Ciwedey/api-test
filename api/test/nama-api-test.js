@@ -24,7 +24,7 @@ describe(`cocktail recipe List`, () => {
  }),
 
  it(`@get ${testCase.negative.noSearch}`, async() => {
-  const response = await page.getRecipes('water');
+  const response = await page.getRecipes('cendol');
   assert(response.status).to.equal(200);
   assert(response.body.drinks).to.equal(null);
  })
